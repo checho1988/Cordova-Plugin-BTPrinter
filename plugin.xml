@@ -31,7 +31,7 @@
       </config-file>
 
       <config-file target="AndroidManifest.xml" parent="/*">
-         <uses-permission android:name="android.permission.BLUETOOTH" />
+         <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH" android:required="false" />
       </config-file>
 
       <source-file src="src/android/BluetoothPrinter.java" target-dir="src/br/com/cordova/printer/bluetooth" />
